@@ -30,3 +30,29 @@ Too much work? Just `@override` the default `#raw` style.
 ```
 
 ![Inline Code](https://ucarecdn.com/5c148e96-8c85-4e99-9930-40a067a48e5e/typstcomponentscode.png)
+
+## Code Block
+
+[View source code](https://github.com/Az-21/typst-components/blob/main/codeblock.typ)
+
+````md
+#codeblock(lang: "cs", // background: luma(240),
+"// Calculate slope using two discrete points on the line
+public static double CalculateSlope(Point p1, Point p2)
+{
+  throw new NotImplementedException;
+}
+"
+)
+
+Or simply `@override` the default `#raw(block: true)` style.
+```cs
+// Calculate slope using equation of the line
+public static double CalculateSlope(Line y)
+{
+  throw new NotImplementedException;
+}
+```
+````
+
+![Codeblock](https://ucarecdn.com/9a340f4d-9697-4bec-b8bf-5087a5a01316/typstcomponentscodeblock.png)
