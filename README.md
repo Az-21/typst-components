@@ -3,7 +3,7 @@
 
 ## Note
 
-[View source code](https://github.com/Az-21/typst-components/blob/main/note.typ)
+### [View source code](https://github.com/Az-21/typst-components/blob/main/note.typ)
 
 ```md
 #note[Simple note.]
@@ -19,7 +19,7 @@
 
 ## Inline Code
 
-[View source code](https://github.com/Az-21/typst-components/blob/main/code.typ)
+### [View source code](https://github.com/Az-21/typst-components/blob/main/code.typ)
 
 ```md
 Inline code with default light green background #code("y =>> x")
@@ -33,7 +33,7 @@ Too much work? Just `@override` the default `#raw` style.
 
 ## Code Block
 
-[View source code](https://github.com/Az-21/typst-components/blob/main/codeblock.typ)
+### [View source code](https://github.com/Az-21/typst-components/blob/main/codeblock.typ)
 
 ````md
 #codeblock(lang: "cs", // background: luma(240),
