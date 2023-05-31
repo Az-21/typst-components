@@ -1,6 +1,8 @@
 # Typst Components
 🐦 Reusable, pre-styled components for typst
 
+Following example images are rendered using [STIX Two](https://github.com/stipub/stixfonts), [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono) + [JetBrains Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts). The NerdFont variant will give you access to thousands of gylphs and icons.
+
 ## Note
 
 ### [View source code](https://github.com/Az-21/typst-components/blob/main/note.typ)
