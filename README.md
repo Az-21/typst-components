@@ -58,3 +58,16 @@ public static double CalculateSlope(Line y)
 ````
 
 ![Codeblock](https://ucarecdn.com/9a340f4d-9697-4bec-b8bf-5087a5a01316/typstcomponentscodeblock.png)
+
+## Boxed Link
+
+### [View source code](https://github.com/Az-21/typst-components/blob/main/boxed_link.typ)
+
+```md
+#boxed_link("https://github.com/default-style/")
+#boxed_link("https://github.com/custom-colors/", background: rgb("#2222aa"), foreground: luma(255))
+#align(center, boxed_link("https://github.com/custom-width/", width: 50%))
+#boxed_link("https://github.com/custom-font-size/", size: 12pt)
+```
+
+![Boxed Link](https://ucarecdn.com/173c955e-4b2c-4f25-998c-84fa7460dcf3/typstcomponentsboxedlink.png)
