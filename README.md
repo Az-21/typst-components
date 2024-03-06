@@ -71,3 +71,10 @@ public static double CalculateSlope(Line y)
 ```
 
 ![Boxed Link](https://ucarecdn.com/173c955e-4b2c-4f25-998c-84fa7460dcf3/typstcomponentsboxedlink.png)
+
+# Favourite Packages
+- https://github.com/platformer/typst-algorithms
+- https://github.com/Midbin/cades
+- https://github.com/FlandiaYingman/note-me
+- https://github.com/Leedehai/typst-physics
+- https://github.com/Pablo-Gonzalez-Calderon/showybox-package
