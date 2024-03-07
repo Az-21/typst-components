@@ -78,3 +78,4 @@ public static double CalculateSlope(Line y)
 - https://github.com/FlandiaYingman/note-me
 - https://github.com/Leedehai/typst-physics
 - https://github.com/Pablo-Gonzalez-Calderon/showybox-package
+- https://github.com/jneug/typst-codelst
