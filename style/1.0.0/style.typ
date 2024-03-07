@@ -55,6 +55,13 @@
     radius: 2pt,
   )
 
+  // @override raw.line used by 'codelst' package
+  #show raw.line: it => text(
+  	font: "JetBrains Mono",
+  	size: 12pt,
+  	it
+  )
+
   /// @override heading styles
   // = Heading 1
   #show heading.where(level:1): it => block(width: 100%)[
