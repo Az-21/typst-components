@@ -5,11 +5,10 @@
   light_green: rgb("#d2f0d4"),
   light_yellow: rgb("#efead3"),
   dark_blue: rgb("#2222aa"),
-  white: rgb("#ffffff"),
-  black: rgb("#000000"),
 )
 
-// Style presets
+
+// Page style preset
 #let style(doc) = [
   // Page layout
   #set page(
@@ -113,3 +112,33 @@
   // Append rest of document from the file importing styling config
   #doc
 ]
+
+
+// Default imports (forwarded automatically; no need to declare again)
+#import "@preview/physica:0.9.2": *
+#import "@preview/note-me:0.1.1": *
+#import "@preview/showybox:2.0.1": showybox
+#import "@preview/codelst:2.0.0": sourcecode
+
+
+// Create custom `showybox` styles
+#let kshowybox(color:green) = showybox.with(
+  title-style: (
+    boxed-style: (
+      anchor: ( x: center, y: horizon),
+      radius: 2pt
+      )
+  ),
+  frame: (
+    title-color: color.darken(40%),
+    body-color: color.lighten(90%),
+    footer-color: color.lighten(70%),
+    border-color: color.darken(40%),
+    radius: 2pt,
+  ),
+)
+
+#let redbox = kshowybox(color: red)
+#let bluebox = kshowybox(color: blue)
+#let greenbox = kshowybox(color: green)
+#let purplebox = kshowybox(color: color.dark_blue)
