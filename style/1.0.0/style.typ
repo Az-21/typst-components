@@ -58,7 +58,7 @@
   // @override raw.line used by 'codelst' package
   #show raw.line: it => text(
     font: "JetBrains Mono",
-    size: 12pt,
+    size: 10pt,
     it
   )
 
