@@ -96,7 +96,7 @@
   /// ==== Heading 5
   #show heading.where(level:5): it => block[
     #v(8pt)
-    #counter(heading).display((_, _, _, _, n) => numbering("A)", n))
+    \u{25B6}
     #h(4pt)
     #text(it.body, size: 11pt)
   ]
