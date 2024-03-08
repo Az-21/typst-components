@@ -39,7 +39,7 @@
 
   // @override ```Code block``` style
   #show raw.where(block: true): block.with(
-    fill: tailwind.neutral-400,
+    fill: tailwind.neutral-200,
     inset: 10pt,
     radius: 2pt,
     width: 100%
@@ -47,7 +47,7 @@
 
   // @override `Inline code` style
   #show raw.where(block: false): box.with(
-    fill: tailwind.emerald-300,
+    fill: tailwind.emerald-100,
     inset: (x: 3pt, y: 0pt),
     outset: (y: 3pt),
     radius: 2pt,
