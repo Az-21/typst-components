@@ -1,13 +1,3 @@
-#let color = (
-  light_red: rgb("#f0d4d5"),
-  light_blue: rgb("#d2e7f0"),
-  light_gray: rgb("#eaeaea"),
-  light_green: rgb("#d2f0d4"),
-  light_yellow: rgb("#efead3"),
-  dark_blue: rgb("#2222aa"),
-)
-
-
 // Page style preset
 #let style(doc) = [
   // Page layout
