@@ -35,7 +35,6 @@
 
   // @override outline (ToC) style
   #set outline(indent: true, depth: 4)
-  #show outline: set text(tailwind.blue-800)
 
   // @override ```Code block``` style
   #show raw.where(block: true): block.with(
