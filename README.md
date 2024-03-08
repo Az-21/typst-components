@@ -5,7 +5,7 @@ Following example images are rendered using [STIX Two](https://github.com/stipub
 
 ## Note
 
-### [View source code](https://github.com/Az-21/typst-components/blob/main/note.typ)
+### [View source code](https://github.com/Az-21/typst-components/components/blob/main/note.typ)
 
 ```md
 #note[Simple note.]
@@ -21,7 +21,7 @@ Following example images are rendered using [STIX Two](https://github.com/stipub
 
 ## Inline Code
 
-### [View source code](https://github.com/Az-21/typst-components/blob/main/code.typ)
+### [View source code](https://github.com/Az-21/typst-components/components/blob/main/code.typ)
 
 ```md
 Inline code with default light green background #code("y =>> x")
@@ -35,7 +35,7 @@ Too much work? Just `@override` the default `#raw` style.
 
 ## Code Block
 
-### [View source code](https://github.com/Az-21/typst-components/blob/main/codeblock.typ)
+### [View source code](https://github.com/Az-21/typst-components/components/blob/main/codeblock.typ)
 
 ````md
 #codeblock(lang: "cs", // background: luma(240),
@@ -61,7 +61,7 @@ public static double CalculateSlope(Line y)
 
 ## Boxed Link
 
-### [View source code](https://github.com/Az-21/typst-components/blob/main/boxed_link.typ)
+### [View source code](https://github.com/Az-21/typst-components/components/blob/main/boxed_link.typ)
 
 ```md
 #boxed_link("https://github.com/default-style/")
