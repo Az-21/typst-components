@@ -35,11 +35,11 @@
 
   // @override outline (ToC) style
   #set outline(indent: true, depth: 4)
-  #show outline: set text(color.dark_blue)
+  #show outline: set text(tailwind.blue-800)
 
   // @override ```Code block``` style
   #show raw.where(block: true): block.with(
-    fill: color.light_gray,
+    fill: tailwind.neutral-400,
     inset: 10pt,
     radius: 2pt,
     width: 100%
@@ -47,7 +47,7 @@
 
   // @override `Inline code` style
   #show raw.where(block: false): box.with(
-    fill: color.light_green,
+    fill: tailwind.emerald-300,
     inset: (x: 3pt, y: 0pt),
     outset: (y: 3pt),
     radius: 2pt,
@@ -115,7 +115,7 @@
 // ------------------------------------------------------------------------- //
 
 // Create custom `showybox` styles
-#let kshowybox(color:green) = showybox.with(
+#let kshowybox(color) = showybox.with(
   title-style: (
     boxed-style: (
       anchor: ( x: center, y: horizon),
@@ -131,9 +131,8 @@
   ),
 )
 
-#let redbox = kshowybox(color: red)
-#let bluebox = kshowybox(color: blue)
-#let greenbox = kshowybox(color: green)
-#let purplebox = kshowybox(color: color.dark_blue)
+#let bluebox = kshowybox(tailwind.blue-600)
+#let greenbox = kshowybox(tailwind.green-600)
+#let purplebox = kshowybox(tailwind.purple-600)
 
 // ------------------------------------------------------------------------- //
