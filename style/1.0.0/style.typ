@@ -5,6 +5,7 @@
 #import "@preview/showybox:2.0.1": showybox
 #import "@preview/codelst:2.0.0": sourcecode
 
+// ------------------------------------------------------------------------- //
 
 // Page style preset
 #let style(doc) = [
@@ -111,6 +112,7 @@
   #doc
 ]
 
+// ------------------------------------------------------------------------- //
 
 // Create custom `showybox` styles
 #let kshowybox(color:green) = showybox.with(
@@ -133,3 +135,5 @@
 #let bluebox = kshowybox(color: blue)
 #let greenbox = kshowybox(color: green)
 #let purplebox = kshowybox(color: color.dark_blue)
+
+// ------------------------------------------------------------------------- //
