@@ -1,3 +1,10 @@
+// External packages
+#import "@preview/physica:0.9.2": *
+#import "@preview/note-me:0.1.1": *
+#import "@preview/showybox:2.0.1": showybox
+#import "@preview/codelst:2.0.0": sourcecode
+
+
 // Page style preset
 #let style(doc) = [
   // Page layout
@@ -102,13 +109,6 @@
   // Append rest of document from the file importing styling config
   #doc
 ]
-
-
-// Default imports (forwarded automatically; no need to declare again)
-#import "@preview/physica:0.9.2": *
-#import "@preview/note-me:0.1.1": *
-#import "@preview/showybox:2.0.1": showybox
-#import "@preview/codelst:2.0.0": sourcecode
 
 
 // Create custom `showybox` styles
