@@ -1,3 +1,6 @@
+// Deprecated in favor of `codelst`
+// https://github.com/jneug/typst-codelst
+
 #let codeblock(content, lang: "", background: luma(240)) = block(
   fill: background,
   inset: 10pt,
