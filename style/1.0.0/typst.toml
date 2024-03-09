@@ -2,3 +2,4 @@
 name = "style"
 version = "1.0.0"
 entrypoint = "style.typ"
+license = "CC0-1.0"
