@@ -33,3 +33,9 @@
 - https://github.com/Pablo-Gonzalez-Calderon/showybox-package
 - https://github.com/jneug/typst-codelst
 - https://github.com/kaarmu/typst-palettes
+
+## Other Typst Repos
+### Typst Material You
+Utility to parse material you theme for typst
+![](https://ucarecdn.com/32edf9f5-c053-4c16-8040-217f408712d7/typstm3green.jpg)
+Get it on https://github.com/Az-21/typst-material-you
