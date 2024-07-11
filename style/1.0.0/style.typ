@@ -56,40 +56,41 @@
   #show heading.where(level:1): it => block(width: 100%)[
     #v(32pt)
     #counter(heading).display()
-    #h(16pt)
+    #h(1em)
     #text(smallcaps(it.body))
   ]
 
   // == Heading 2
   #show heading.where(level:2): it => block[
+    #set block(spacing: 0.4em)
     #v(16pt)
     #counter(heading).display()
-    #h(16pt)
+    #h(1em)
     #text(it.body)
     #line(length: 100%, stroke: 1pt + luma(180))
   ]
 
   /// === Heading 3
   #show heading.where(level:3): it => block[
-    #v(16pt)
+    #v(8pt)
     #counter(heading).display()
-    #h(16pt)
+    #h(1em)
     #text(it.body)
   ]
 
   /// ==== Heading 4
   #show heading.where(level:4): it => block[
-    #v(8pt)
+    #v(4pt)
     #counter(heading).display()
-    #h(8pt)
+    #h(1em)
     #text(it.body)
   ]
 
   /// ==== Heading 5
   #show heading.where(level:5): it => block[
-    #v(8pt)
+    #v(2pt)
     \u{25B6}
-    #h(4pt)
+    #h(1em)
     #text(it.body, size: 11pt)
   ]
 
