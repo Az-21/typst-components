@@ -116,7 +116,7 @@
 #let kshowybox(color) = showybox.with(
   title-style: (
     boxed-style: (
-      anchor: ( x: center, y: horizon),
+      anchor: (x: left, y: horizon),
       radius: 2pt
       )
   ),
