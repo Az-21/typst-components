@@ -1,7 +1,7 @@
 // External packages
-#import "@preview/physica:0.9.2": *
-#import "@preview/note-me:0.1.1": *
-#import "@preview/splash:0.3.0": tailwind
+#import "@preview/physica:0.9.3": *
+#import "@preview/note-me:0.2.1": *
+#import "@preview/splash:0.4.0": tailwind
 #import "@preview/showybox:2.0.1": showybox
 
 // ------------------------------------------------------------------------- //
