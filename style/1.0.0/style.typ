@@ -3,7 +3,6 @@
 #import "@preview/note-me:0.1.1": *
 #import "@preview/splash:0.3.0": tailwind
 #import "@preview/showybox:2.0.1": showybox
-#import "@preview/codelst:2.0.0": sourcecode
 
 // ------------------------------------------------------------------------- //
 
