@@ -20,10 +20,15 @@
   #set text(12pt, lang: "en")
   #show math.equation: set text(font: "New Computer Modern Math")
   #show raw: text.with(font: "JetBrains Mono")
-  #set par(justify: true, leading: 1.5em)
 
   // Spacing
-  #set block(below: 4em)
+  #set par(justify: true, leading: 1.5em)
+  #show raw.where(block: true): set par(leading: 0.8em)
+  #show heading.where(level: 1): set block(above: 5em)
+  #show heading.where(level: 2): set block(above: 4em)
+  #show heading.where(level: 3): set block(above: 4em)
+  #show heading.where(level: 4): set block(above: 3em)
+  #show heading.where(level: 5): set block(above: 2em)
 
   // Add equation numbers
   #set math.equation(numbering: "(1)")
