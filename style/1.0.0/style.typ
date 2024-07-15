@@ -32,8 +32,8 @@
   #set heading(numbering: "1.1.1.1 ")
 
   // @override +enumeration list and -bullet list styles
-  #set list(indent: 16pt)
-  #set enum(numbering: "1.", indent: 16pt)
+  #set list(indent: 1em)
+  #set enum(numbering: "1a.", indent: 1em)
 
   // @override outline (ToC) style
   #set outline(indent: true, depth: 4)
