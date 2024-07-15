@@ -20,7 +20,10 @@
   #set text(12pt, lang: "en")
   #show math.equation: set text(font: "New Computer Modern Math")
   #show raw: text.with(font: "JetBrains Mono")
-  #set par(justify: true)
+  #set par(justify: true, leading: 1.5em)
+
+  // Spacing
+  #set block(below: 4em)
 
   // Add equation numbers
   #set math.equation(numbering: "(1)")
@@ -54,7 +57,6 @@
   /// @override heading styles
   // = Heading 1
   #show heading.where(level:1): it => block(width: 100%)[
-    #v(32pt)
     #counter(heading).display()
     #h(1em)
     #text(smallcaps(it.body))
@@ -63,7 +65,6 @@
   // == Heading 2
   #show heading.where(level:2): it => block[
     #set block(spacing: 0.4em)
-    #v(16pt)
     #counter(heading).display()
     #h(1em)
     #text(it.body)
@@ -72,7 +73,6 @@
 
   /// === Heading 3
   #show heading.where(level:3): it => block[
-    #v(8pt)
     #counter(heading).display()
     #h(1em)
     #text(it.body)
@@ -80,7 +80,6 @@
 
   /// ==== Heading 4
   #show heading.where(level:4): it => block[
-    #v(4pt)
     #counter(heading).display()
     #h(1em)
     #text(it.body)
@@ -88,7 +87,6 @@
 
   /// ==== Heading 5
   #show heading.where(level:5): it => block[
-    #v(2pt)
     \u{25B6}
     #h(1em)
     #text(it.body, size: 11pt)
