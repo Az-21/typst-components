@@ -3,6 +3,8 @@
 #import "@preview/note-me:0.2.1": *
 #import "@preview/splash:0.4.0": tailwind
 #import "@preview/showybox:2.0.1": showybox
+#import "@preview/name-it:0.1.0": name-it as name
+#import "@preview/nth:1.0.1": nths as nth
 
 // ------------------------------------------------------------------------- //
 
