@@ -36,7 +36,7 @@
   #set math.equation(numbering: "(1)")
 
   // @override #heading style
-  #set heading(numbering: "1.1.1.1 ")
+  #set heading(numbering: "1.1.1.1")
 
   // @override +enumeration list and -bullet list styles
   #set list(indent: 1em)
@@ -50,7 +50,7 @@
     fill: tailwind.neutral-200,
     inset: 10pt,
     radius: 2pt,
-    width: 100%
+    width: 100%,
   )
 
   // @override `Inline code` style
@@ -63,14 +63,14 @@
 
   /// @override heading styles
   // = Heading 1
-  #show heading.where(level:1): it => block(width: 100%)[
+  #show heading.where(level: 1): it => block(width: 100%)[
     #counter(heading).display()
     #h(1em)
     #text(smallcaps(it.body))
   ]
 
   // == Heading 2
-  #show heading.where(level:2): it => block[
+  #show heading.where(level: 2): it => block[
     #set block(spacing: 0.4em)
     #counter(heading).display()
     #h(1em)
@@ -79,21 +79,21 @@
   ]
 
   /// === Heading 3
-  #show heading.where(level:3): it => block[
+  #show heading.where(level: 3): it => block[
     #counter(heading).display()
     #h(1em)
     #text(it.body)
   ]
 
   /// ==== Heading 4
-  #show heading.where(level:4): it => block[
+  #show heading.where(level: 4): it => block[
     #counter(heading).display()
     #h(1em)
     #text(it.body)
   ]
 
   /// ==== Heading 5
-  #show heading.where(level:5): it => block[
+  #show heading.where(level: 5): it => block[
     \u{25B6}
     #h(1em)
     #text(it.body, size: 11pt)
@@ -116,8 +116,8 @@
   title-style: (
     boxed-style: (
       anchor: (x: left, y: horizon),
-      radius: 2pt
-      )
+      radius: 2pt,
+    ),
   ),
   frame: (
     title-color: color.darken(40%),
