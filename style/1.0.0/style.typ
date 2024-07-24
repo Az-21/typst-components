@@ -5,6 +5,7 @@
 #import "@preview/showybox:2.0.1": showybox
 #import "@preview/name-it:0.1.0": name-it as name
 #import "@preview/nth:1.0.1": nths as nth
+#import "@preview/fontawesome:0.2.1": *
 
 // ------------------------------------------------------------------------- //
 
