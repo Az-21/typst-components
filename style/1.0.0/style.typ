@@ -1,17 +1,14 @@
-// External packages
+/// Packages
 #import "@preview/physica:0.9.3": *
 #import "@preview/note-me:0.2.1": *
 #import "@preview/splash:0.4.0": tailwind
 #import "@preview/showybox:2.0.1": showybox
 #import "@preview/name-it:0.1.0": name-it as name
 #import "@preview/nth:1.0.1": nths as nth
-#import "@preview/fontawesome:0.2.1": *
+#import "@preview/fontawesome:0.3.0": *
 
-// ------------------------------------------------------------------------- //
-
-// Page style preset
+/// Document style
 #let style(doc) = [
-  // Page layout
   #set page(
     paper: "a4",
     margin: auto,
@@ -33,20 +30,18 @@
   #show heading.where(level: 4): set block(above: 3em)
   #show heading.where(level: 5): set block(above: 2em)
 
-  // Add equation numbers
-  #set math.equation(numbering: "(1)")
-
-  // @override #heading style
-  #set heading(numbering: "1.1.1.1")
-
-  // @override +enumeration list and -bullet list styles
+  // @override default styles
   #set list(indent: 1em)
-  #set enum(numbering: "1a.", indent: 1em)
-
-  // @override outline (ToC) style
+  #set math.mat(delim: "[")
+  #set pagebreak(weak: true)
+  #set heading(numbering: "1.1.1.1")
   #set outline(indent: true, depth: 4)
+  #set math.equation(numbering: "(1)")
+  #set enum(numbering: "1a.", indent: 1em)
+  #set table(align: center + horizon, inset: 8pt)
 
   // @override ```Code block``` style
+  #show raw.where(block: true): set par(justify: false)
   #show raw.where(block: true): block.with(
     fill: tailwind.neutral-200,
     inset: 10pt,
@@ -56,21 +51,20 @@
 
   // @override `Inline code` style
   #show raw.where(block: false): box.with(
-    fill: tailwind.emerald-100,
-    inset: (x: 3pt, y: 0pt),
-    outset: (y: 3pt),
+    fill: tailwind.purple-300,
+    inset: (x: 0.5em, y: 0em),
+    outset: (y: 0.5em),
     radius: 2pt,
   )
 
-  /// @override heading styles
-  // = Heading 1
+  // @override heading styles
+  // Heading 1
   #show heading.where(level: 1): it => block(width: 100%)[
     #counter(heading).display()
     #h(1em)
     #text(smallcaps(it.body))
   ]
-
-  // == Heading 2
+  // Heading 2
   #show heading.where(level: 2): it => block[
     #set block(spacing: 0.4em)
     #counter(heading).display()
@@ -78,41 +72,75 @@
     #text(it.body)
     #line(length: 100%, stroke: 1pt + luma(180))
   ]
-
-  /// === Heading 3
+  // Heading 3
   #show heading.where(level: 3): it => block[
     #counter(heading).display()
     #h(1em)
     #text(it.body)
   ]
-
-  /// ==== Heading 4
+  // Heading 4
   #show heading.where(level: 4): it => block[
     #counter(heading).display()
     #h(1em)
     #text(it.body)
   ]
 
-  /// ==== Heading 5
+  // Heading 5
   #show heading.where(level: 5): it => block[
     \u{25B6}
     #h(1em)
     #text(it.body, size: 11pt)
   ]
 
-  // Default pagebreaks to `weak`
-  #set pagebreak(weak: true)
-
-  // @override default matrix brace style
-  #set math.mat(delim: "[")
-
-  // Append rest of document from the file importing styling config
   #doc
 ]
 
-// ------------------------------------------------------------------------- //
+/// Custom objects
+#let boxed-link(
+  url,
+  display: "",
+  background: tailwind.blue-200,
+  foreground: tailwind.neutral-950,
+  width: 100%,
+) = {
+  set text(fill: foreground)
+  set align(center)
+  box(fill: background, width: width, inset: 1em, radius: 2pt)[
+    #if (display == "") {
+      link(url)
+    } else {
+      link(url)[#display]
+    }
+    #super[#fa-icon("arrow-up-right-from-square")]
+  ]
+}
 
-// Create custom `showybox` styles
+#let k-link(url, display: "") = {
+  set text(fill: tailwind.blue-700)
+  if display == "" {
+    underline[#link(url)]
+  } else {
+    underline[#link(url)[#display]]
+  }
+}
+
+#let code(
+  content,
+  background: tailwind.violet-300,
+  foreground: tailwind.neutral-950,
+  font: "JetBrains Mono",
+) = {
+  set text(fill: foreground, font: font)
+  box(
+    fill: background,
+    inset: (x: 0.5em, y: 0em),
+    outset: (y: 0.5em),
+    radius: 2pt,
+    content,
+  )
+}
+
+// `showybox` preset
 #let kshowybox(color) = showybox.with(
   title-style: (
     boxed-style: (
@@ -128,9 +156,6 @@
     radius: 2pt,
   ),
 )
-
-#let bluebox = kshowybox(tailwind.blue-600)
-#let greenbox = kshowybox(tailwind.green-600)
-#let purplebox = kshowybox(tailwind.purple-600)
-
-// ------------------------------------------------------------------------- //
+#let blue-box = kshowybox(tailwind.blue-600)
+#let green-box = kshowybox(tailwind.green-600)
+#let purple-box = kshowybox(tailwind.purple-600)
