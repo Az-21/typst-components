@@ -24,11 +24,11 @@
   // Spacing
   #set par(justify: true, leading: 1.5em)
   #show raw.where(block: true): set par(leading: 0.8em)
-  #show heading.where(level: 1): set block(above: 5em)
-  #show heading.where(level: 2): set block(above: 4em)
-  #show heading.where(level: 3): set block(above: 4em)
-  #show heading.where(level: 4): set block(above: 3em)
-  #show heading.where(level: 5): set block(above: 2em)
+  #show heading.where(level: 1): set block(above: 2em)
+  #show heading.where(level: 2): set block(above: 3em)
+  #show heading.where(level: 3): set block(above: 2em)
+  #show heading.where(level: 4): set block(above: 1em)
+  #show heading.where(level: 5): set block(above: 0.5em)
 
   // @override default styles
   #set list(indent: 1em)
