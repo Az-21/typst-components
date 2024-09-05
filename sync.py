@@ -10,12 +10,14 @@ def ensure_windows():
     sys.exit(1)
 
 
-def delete_folder_if_exists(folder_path):
+def delete_folder(folder_path):
   if os.path.exists(folder_path) and os.path.isdir(folder_path):
     try:
       shutil.rmtree(folder_path)
+      print(f"Deleted {folder_path}")
     except Exception as e:
-      print(f"Error deleting folder: {e}")
+      print(f"[ FATAL ] Error deleting folder: {e}")
+      sys.exit()
 
 
 def copy_folder(src, dst):
@@ -57,10 +59,11 @@ def main(args: list[str]) -> None:
 
   sync_mode: SyncMode = parse_cli_args(args)
   if sync_mode is SyncMode.FromGitToLocal:
-    delete_folder_if_exists(local_style_folder)
+    delete_folder(local_style_folder)
     copy_folder(git_style_folder, local_style_folder)
+
   if sync_mode is SyncMode.FromLocalToGit:
-    delete_folder_if_exists(git_style_folder)
+    delete_folder(git_style_folder)
     copy_folder(local_style_folder, git_style_folder)
 
 
