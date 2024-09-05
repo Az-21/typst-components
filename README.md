@@ -25,8 +25,18 @@
 ```
 ![Boxed Link](https://ucarecdn.com/08fdcdca-8097-403b-a94e-e685e6e2a226/typstcomponentsboxedlink.jpeg)
 
+## Sync
+Move changes from `git` repo to `@local` Typst folder, and vice versa.
+```sh
+# git -> @local
+python ./sync.py --from-git-to-local
+
+# @local -> git
+python ./sync.py --from-local-to-git
+```
+
 ## Other Typst Repos
 ### Typst Material You
-Utility to parse material you theme for typst
+Utility to parse material you theme for Typst
 ![](https://ucarecdn.com/32edf9f5-c053-4c16-8040-217f408712d7/typstm3green.jpg)
 Get it on https://github.com/Az-21/material-you-adapter
