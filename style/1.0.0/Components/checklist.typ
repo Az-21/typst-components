@@ -12,11 +12,16 @@
 }
 
 #let checkbox-todo() = {
-  fa-icon("square", solid: true, fill: material3.red.light.primary)
+  fa-icon("square", solid: false, fill: material3.blue.light.primary)
   h(0.5em)
 }
 
 #let checkbox-semi() = {
   fa-icon("square-minus", solid: true, fill: material3.blue.light.primary)
+  h(0.5em)
+}
+
+#let checkbox-fail() = {
+  fa-icon("square-xmark", solid: true, fill: material3.red.light.primary)
   h(0.5em)
 }
