@@ -1,10 +1,12 @@
 #import "../dependencies.typ": *
+#import "../Colors/m3.typ": *
+#let m3 = material3.blue.light
 
 #let boxed-link(
   url,
   display: "",
-  background: tailwind.blue-200,
-  foreground: tailwind.neutral-950,
+  background: m3.primaryContainer,
+  foreground: m3.onPrimaryContainer,
   width: 100%,
 ) = {
   set text(fill: foreground)
@@ -20,7 +22,7 @@
 }
 
 #let k-link(url, display: "") = {
-  set text(fill: tailwind.blue-700)
+  set text(fill: m3.primaryContainerHighContrast)
   if display == "" {
     underline[#link(url)]
   } else {
