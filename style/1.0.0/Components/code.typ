@@ -1,9 +1,10 @@
-#import "../dependencies.typ": *
+#import "../Colors/m3.typ": *
+#let m3 = material3.blue.dark
 
 #let code(
   content,
-  background: tailwind.violet-300,
-  foreground: tailwind.neutral-950,
+  background: m3.primaryContainer,
+  foreground: m3.onPrimaryContainer,
   font: "JetBrains Mono",
 ) = {
   set text(fill: foreground, font: font)
