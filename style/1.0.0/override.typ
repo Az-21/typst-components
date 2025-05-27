@@ -27,7 +27,7 @@
   #set math.mat(delim: "[")
   #set pagebreak(weak: true)
   #set heading(numbering: "1.1.1.1")
-  #set outline(indent: true, depth: 4)
+  #set outline(depth: 4)
   #set math.equation(numbering: "(1)")
   #set enum(numbering: "1a.", indent: 1em)
   #set table(align: center + horizon, inset: 8pt)
