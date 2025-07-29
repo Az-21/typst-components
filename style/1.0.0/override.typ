@@ -34,15 +34,6 @@
   #set enum(numbering: "1a.", indent: 1em)
   #set table(align: center + horizon, inset: 8pt)
 
-  // ```Code block``` style
-  #show raw.where(block: true): set par(justify: false)
-  #show raw.where(block: true): block.with(
-    fill: m3.blue.light.background,
-    inset: 10pt,
-    radius: 2pt,
-    width: 100%,
-  )
-
   // `Inline code` style
   #show raw.where(block: false): box.with(
     fill: m3.blue.light.primaryContainer,
