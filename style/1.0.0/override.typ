@@ -44,8 +44,10 @@
 
   // Heading 1
   #show heading.where(level: 1): it => block(width: 100%)[
-    #counter(heading).display()
-    #h(1em)
+    #if it.numbering != none {
+      counter(heading).display()
+      h(1em)
+    }
     #text(smallcaps(it.body))
   ]
 
