@@ -1,4 +1,6 @@
 #import "dependencies.typ": *
+#import "Colors/m3.typ": *
+#let m3 = material3
 
 #let style(doc) = [
   #set page(
@@ -35,7 +37,7 @@
   // ```Code block``` style
   #show raw.where(block: true): set par(justify: false)
   #show raw.where(block: true): block.with(
-    fill: tailwind.neutral-200,
+    fill: m3.blue.light.background,
     inset: 10pt,
     radius: 2pt,
     width: 100%,
@@ -43,7 +45,7 @@
 
   // `Inline code` style
   #show raw.where(block: false): box.with(
-    fill: tailwind.blue-300,
+    fill: m3.blue.light.primaryContainer,
     inset: (x: 0.5em, y: 0em),
     outset: (y: 0.5em),
     radius: 2pt,
